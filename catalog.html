@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Device store</title>
         <link rel="stylesheet" href="#">
     </head>
     <body>
@@ -13,8 +13,8 @@
           </a>
           <form>
             <fieldset>
-              <p><input type="text" id="search-input">Поиск по сайту</p>
-              <p><input type="submit" value="Найти" id="search-btn"></p>
+              <p><input type="text" placeholder="Поиск по сайту" id="search-input"></p>
+              <button type="submit" value="Найти" id="search-btn"></button>
             </fieldset>
           </form>
           <ul class="user-nav">
@@ -52,32 +52,33 @@
           <li>Моноподы для селфи</li>
         </ul>
         <section>
+          <h2>Каталог</h2>
           <div>
             <section class="filters">
-              <h2>Фильтр товаров</h2>
+              <h3>Фильтр товаров</h3>
               <form class="product-list">
                 <fieldset>
-                  <h3>Стоимость</h3>
+                  <h4>Стоимость</h4>
                   <input type="range" min="0" max="5000" id="price">
-                  <h3>Цвет</h3>
+                  <h4>Цвет</h4>
                   <p>
-                    <input type="checkbox" value="black" id="color">Черный
-                    <input type="checkbox" value="white" id="color">Белый
-                    <input type="checkbox" value="blue" id="color">Синий
-                    <input type="checkbox" value="red" id="color">Красный
-                    <input type="checkbox" value="pink" id="color">Розовый
+                    <input type="checkbox" value="black" id="color-black">Черный
+                    <input type="checkbox" value="white" id="color-white">Белый
+                    <input type="checkbox" value="blue" id="color-blue">Синий
+                    <input type="checkbox" value="red" id="color-red">Красный
+                    <input type="checkbox" value="pink" id="color-pink">Розовый
                   </p>
-                  <h3>Bluetooth</h3>
+                  <h4>Bluetooth</h4>
                   <p>
-                    <input type="radio" value="yes" id="bluetooth">Есть
-                    <input type="radio" value="no" id="bluetooth">Нет
+                    <input type="radio" value="yes" id="bluetooth-available">Есть
+                    <input type="radio" value="no" id="bluetooth-unavailable">Нет
                   </p>
                     <input type="submit" value="Показать" id="bluetooth">
                 </fieldset>
               </form>
             </section>
             <section class="sort">
-              <h2>Сортировка товаров</h2>
+              <h3>Сортировка товаров</h3>
               <form>
                 <fieldset>
                   <p><input type="radio" id="sort-by-price">По цене</p>
@@ -88,7 +89,7 @@
             </section>
 
             <section class="catalog">
-              <h2 >Список товаров</h2>
+              <h3>Список товаров</h3>
               <ul class="catalog-list">
                 <li>
                   <div class="product">
@@ -97,9 +98,9 @@
                       <span class="visually-hidden">NEW</span>
                     </a>
                     <a class="catalog-item" href="#">
-                      <h3>
-                        <p>Любительская селфи-палка</p>
-                      </h3>
+                      <h4>
+                        Любительская селфи-палка
+                      </h4>
                       <p class="price">500<span>руб</span></p>
                     </a>
                   </div>
@@ -115,9 +116,9 @@
                       <span class="visually-hidden">NEW</span>
                     </a>
                     <a class="catalog-item" href="#">
-                      <h3>
-                        <p>Профессиональной селфи-палка</p>
-                      </h3>
+                      <h4>
+                        Профессиональной селфи-палка
+                      </h4>
                       <p class="price">1500<span>руб</span></p>
                     </a>
                   </div>
@@ -133,9 +134,9 @@
                       <span class="visually-hidden">NEW</span>
                     </a>
                     <a class="catalog-item" href="#">
-                      <h3>
-                        <p>Hепотопляемая селфи-палка</p>
-                      </h3>
+                      <h4>
+                        Hепотопляемая селфи-палка
+                      </h4>
                       <p class="price">2500<span>руб</span></p>
                     </a>
                   </div>
@@ -151,9 +152,9 @@
                       <span class="visually-hidden">NEW</span>
                     </a>
                     <a class="catalog-item" href="#">
-                      <h3>
-                        <p>Селфи-палка &#171;Следуй за мной&#187;</p>
-                      </h3>
+                      <h4>
+                        Селфи-палка &#171;Следуй за мной&#187;
+                      </h4>
                       <p class="price">4900<span>руб</span></p>
                     </a>
                   </div>

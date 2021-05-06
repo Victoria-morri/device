@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Device store</title>
         <link rel="stylesheet" href="#">
     </head>
     <body>
@@ -13,8 +13,8 @@
           </a>
           <form>
             <fieldset>
-              <p><input type="text" id="search-input">Поиск по сайту</p>
-              <p><input type="submit" value="Найти" id="search-btn"></p>
+              <p><input type="text" placeholder="Поиск по сайту" id="search-input"></p>
+              <button type="submit" value="Найти" id="search-btn"></button>
             </fieldset>
           </form>
           <ul class="user-nav">
@@ -46,51 +46,70 @@
       </header>
       <main class="container">
         <h1 class="visually-hidden">Device магазин</h1>
-        <table class="popular-goods-list">
+        <section class="popular-goods-list">
           <h2 class="visually-hidden">Популярные товары</h2>
-          <tbody>
-            <tr>
-              <th>Наименование товара</th>
-              <th>Слоган</th>
-              <th>Описание</th>
-              <th>Характеристики</th>
-            </tr>
-            <tr>
-              <td><h3>Селфи-палка</h3>></td>
-              <td>Делай селфи, как Бен Стиллер!</td>
-              <td>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</td>
-              <td>
-                <ul>
-                  <li>Длина палки<b>8,5 м</b></li>
-                  <li>Вес палки<b>5 кг</b></li>
-                  <li>Материал<b>Карбон</b></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><h3>Умные часы</h3></td>
-              <td>Худеем правильно!</td>
-              <td>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</td>
-              <td>
-                <ul>
-                  <li>Без подзарядки<b>48 часов</b></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><h3>Квадрокоптер</h3></td>
-              <td>Порхает как бабочка, жалит как пчела!</td>
-              <td>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</td>
-              <td>
-                <ul>
-                  <li>Дальность полета<b>800 м</b></li>
-                  <li>Радиус поражения<b>50 м</b></li>
-                  <li></li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="popular-goods-item">
+            <h3>Селфи-палка</h3>
+            <img src="" alt="Фото селфи-палки">
+            <span>Делай селфи, как Бен Стиллер!</span>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a href="#">ПОДРОБНЕЕ</a>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="popular-goods-item">
+           <h3>Умные часы</h3>
+           <img src="" alt="Фото умных часов">
+            <span>Худеем правильно!</span>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.</p>
+            <a href="#">ПОДРОБНЕЕ</a>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="popular-goods-item">
+            <h3>Квадрокоптер</h3>
+            <img src="" alt="Фото квадрокоптера">
+            <span>Порхает как бабочка, жалит как пчела!</span>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным лазером, замаскированным под стандартную камеру.</p>
+            <a href="#">ПОДРОБНЕЕ</a>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section class="goods">
           <h2 class="visually-hidden">Виды товаров</h2>
           <ul class="goods-list">
@@ -104,25 +123,23 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="services-list">
-          <li>
-            <h3>Доставка</h3>
+        <div class="services-item">
+          <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
               бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li>
+        </div>
+        <div class="services-item">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
               не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
-          </li>
-          <li>
+        </div>
+        <div class="services-item">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
                для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
                 разумеется.</p>
-          </li>
-        </ul>
+        </div>
       </section>
       <div class="logo">
         <h2 class="visually-hidden">Логотипы товаров</h2>
@@ -191,12 +208,13 @@
         </ul>
         <img src="#" alt="Логотип HTML academy">
       </footer>
-      <section class=" modal modal-write-us">
+      <section class="modal modal-write-us">
+        <h4>Модальное окно письма</h4>
         <form>
           <fieldset>
-            <p><input type="text" value="Имя Фамилия" id="name-input">Ваше имя</p>
-            <p><input type="text" value="email@example.com" id="e-mail-input">Ваш e-mail</p>
-            <p><input type="text" value="В свободной форме" id="letter-text-input">Текст письма</p>
+            <p><input type="text" placeholder="Имя Фамилия" id="name-input">Ваше имя</p>
+            <p><input type="text" placeholder="email@example.com" id="e-mail-input">Ваш e-mail</p>
+            <p><input type="text" placeholder="В свободной форме" id="letter-text-input">Текст письма</p>
             <p><input type="submit" value="Отправить" id="submit-btn"></p>
           </fieldset>
         </form>
