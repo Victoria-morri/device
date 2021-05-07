@@ -3,36 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Device store</title>
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <header class="main-header">
         <nav class="main-navigation">
           <a class="device-logo">
-            <img src="svg\black-logo-device.svg" alt="Логотип Device" width="#" height="#">
+            <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
           <form>
             <fieldset>
               <p><input type="text" placeholder="Поиск по сайту" id="search-input"></p>
               <button type="submit" value="Найти" id="search-btn"></button>
-              <img src="svg\search.svg" alt="search-icon">
+              <img src="svg/search.svg" alt="Иконка поиска">
             </fieldset>
           </form>
           <div>
-            <img src="svg\user.svg" alt="user-icon">
+            <img src="svg/user.svg" alt="Иконка пользователя">
             <ul class="user-nav">
-            <li><a class="enter-my-profile" href="#">Войти</a></li>
-            <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-            <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
-          </ul>
+              <li><a class="enter-my-profile" href="#">Войти</a></li>
+              <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
+            </ul>
           </div>
 
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg\compare.svg" alt="compare-icon"></li>
-            <li><a href="#">Корзина</a><img src="svg\cart.svg" alt="cart-icon"></li>
+            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="Иконка сравнения"></li>
+            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="Иконка корзины"></li>
           </ul>
           <ul class="site-nav">
-            <li><button>КАТАЛОГ ТОВАРОВ</button>
+            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Плюс">
               <ul class="visually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -60,6 +60,14 @@
             <p>Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#">ПОДРОБНЕЕ</a>
+          <div>
+            <ul>
+              <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
+              <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+              <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+            </ul>
+
+          </div>
             <table>
               <tbody>
                 <tr>
@@ -82,6 +90,14 @@
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
             <a href="#">ПОДРОБНЕЕ</a>
+            <div>
+              <ul>
+                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+                <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
+                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+              </ul>
+
+            </div>
             <table>
               <tbody>
                 <tr>
@@ -100,6 +116,14 @@
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#">ПОДРОБНЕЕ</a>
+            <div>
+              <ul>
+                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
+                <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
+              </ul>
+
+            </div>
             <table>
               <tbody>
                 <tr>
@@ -156,30 +180,30 @@
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img src="svg\delivery.svg" alt="delivery-icon">
+          <img src="svg/delivery.svg" alt="Иконка доставки">
         </div>
         <div class="services-item">
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
             не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
-          <img src="svg\guarantee.svg" alt="guarantee-icon">
+          <img src="svg/guarantee.svg" alt="Иконка гарантии">
         </div>
         <div class="services-item">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
               для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
               разумеется.</p>
-          <img src="svg\credit.svg" alt="credit-icon">
+          <img src="svg/credit.svg" alt="Иконка кредита">
         </div>
       </section>
       <div class="logo">
-        <h2 class="visually-hidden">Логотипы товаров</h2>
+        <h2 class="">Логотипы товаров</h2>
         <ul class="logo-list">
-          <li><img src="#" alt="Логотип dgi"></li>
-          <li><img src="#" alt="Логотип sp gadgets"></li>
-          <li><img src="#" alt="Логотип go pro"></li>
-          <li><img src="#" alt="Логотип vive"></li>
+          <li><img src="image/logo-1.jpg" alt="Логотип dgi"><img src="image/logo-1-color.jpg" alt="Логотип dgi"></li>
+          <li><img src="image/logo-2.jpg" alt="Логотип sp gadgets"><img src="image/logo-2-color.jpg" class="visually-hidden" alt="Логотип sp gadgets"></li>
+          <li><img src="image/logo-3.jpg" alt="Логотип go pro"><img src="image/logo-3-color.jpg" alt="Логотип go pro"></li>
+          <li><img src="image/logo-4.jpg" alt="Логотип vive"><img src="image/logo-4-color.jpg" alt="Логотип vive"></li>
         </ul>
       </div>
       <section class="info">
@@ -208,16 +232,20 @@
       <footer class="main-footer">
         <nav class="footer-navigation">
           <a class="device-logo" href="#">
-            <img src="#" alt="Логотип Device" width="#" height="#">
+            <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <ul class="user-nav">
-            <li><a class="enter-my-profile" href="#">Войти</a></li>
-            <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-            <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
-          </ul>
+          <div>
+            <img src="svg/user.svg" alt="Иконка пользователя">
+            <ul class="user-nav">
+              <li><a class="enter-my-profile" href="#">Войти</a></li>
+              <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
+            </ul>
+          </div>
+
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="compare-icon"></li>
+            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
           </ul>
           <ul class="site-nav">
             <li><a>ДОСТАВКА</a></li>
@@ -234,11 +262,11 @@
           </p>
         </div>
         <ul class="social-networks-list">
-          <li><a href="#"><img src="svg\fb.svg" alt="Фэйсбук"></a></li>
-          <li><a href="#"><img src="svg\vk.svg" alt="Вконтакте"></a></li>
-          <li><a href="#"><img src="svg\twitter.svg" alt="Твиттер"></a></li>
+          <li><a href="#"><img src="svg/fb.svg" alt="Фэйсбук"></a></li>
+          <li><a href="#"><img src="svg/instag.svg" alt="Инстаграм"></a></li>
+          <li><a href="#"><img src="svg/twitter.svg" alt="Твиттер"></a></li>
         </ul>
-        <img src="svg\logo-html.svg" alt="Логотип HTML academy">
+        <img src="svg/logo-html.svg" alt="Логотип HTML academy">
       </footer>
       <section class="modal modal-write-us">
         <h4>Модальное окно письма</h4>
@@ -250,5 +278,6 @@
             <p><input type="submit" value="Отправить" id="submit-btn"></p>
           </fieldset>
         </form>
+        <img src="svg/modal-close.svg" alt="Крестик закрывающий окно">
       </section>
     </body>
