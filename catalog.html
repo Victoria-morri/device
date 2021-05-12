@@ -11,11 +11,11 @@
           <a class="device-logo" href="index.html">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <form>
-            <fieldset>
-              <p><input type="text" placeholder="Поиск по сайту" id="search-input"></p>
-              <button type="submit" value="Найти" id="search-btn"></button>
-            </fieldset>
+          <form class="search-form">
+                <label class="visually-hidden" for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt="Иконка поиска"></label>
+                <input type="text" placeholder="Поиск по сайту" id="search-input">
+              <button class="visually-hidden" type="submit" id="search-btn">Найти
+                </button>
           </form>
           <div>
             <img src="svg/user.svg" alt="user-icon">
@@ -30,7 +30,7 @@
             <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
           </ul>
           <ul class="site-nav">
-            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Знак плюс">
+            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Просмотреть товары">
               <ul class="visually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#" class="site-nav-current">Моноподы для селфи</a></li>
@@ -58,40 +58,58 @@
           <h2>Каталог</h2>
           <div>
             <section class="filters">
-              <h3>Фильтр товаров</h3>
-              <form class="product-list">
+              <h3>Фильтр:</h3>
+              <form class="filters-form">
                 <fieldset>
                   <h4>Стоимость</h4>
-                  <img src="svg/filter-button.svg" alt="Бегунок"><input type="range" min="0" max="5000" id="price">
+                  <img src="svg/filter-button.svg" alt="Бегунок регулировки стоимости">
+                  <label class="visually hidden" for="price">Настройка диапазона стоимости</label>
+                  <input type="range" min="0" max="5000" id="price">
                   <h4>Цвет</h4>
                   <p>
-                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент"><input type="checkbox" value="black" id="color-black">Черный
-                    <img class="visually-hidden" src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img src="svg/checkbox-on.svg" alt="Отмеченный элемент"><input type="checkbox" value="white" id="color-white">Белый
-                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент"><input type="checkbox" value="blue" id="color-blue">Синий
-                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент"><input type="checkbox" value="red" id="color-red">Красный
-                    <img class="visually-hidden" src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img src="svg/checkbox-on.svg" alt="Отмеченный элемент"><input type="checkbox" value="pink" id="color-pink">Розовый
+                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент">
+                    <label for="color-black">Черный</label>
+                    <input type="checkbox" value="black" id="color-black">
+                    <img class="visually-hidden" src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img src="svg/checkbox-on.svg" alt="Отмеченный элемент">
+                    <label for="color-white">Белый</label>
+                    <input type="checkbox" value="white" id="color-white">
+                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент">
+                    <label for="color-blue">Синий</label>
+                    <input type="checkbox" value="blue" id="color-blue">
+                    <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент">
+                    <label for="color-red">Красный</label>
+                    <input type="checkbox" value="red" id="color-red">
+                    <img class="visually-hidden" src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img src="svg/checkbox-on.svg" alt="Отмеченный элемент">
+                    <label for="color-pink">Розовый</label>
+                    <input type="checkbox" value="pink" id="color-pink">
                   </p>
                   <h4>Bluetooth</h4>
                   <p>
-                    <input type="radio" value="yes" id="bluetooth-available">Есть
+                    <label for="bluetooth-available">Есть</label>
+                    <input type="radio" value="yes" id="bluetooth-available" name="bluetooth" checked>
                     <img src="svg/slider-button.svg" alt="отмеченный элемент">
-                    <input type="radio" value="no" id="bluetooth-unavailable">Нет
+                    <label for="bluetooth-unavailable">Нет</label>
+                    <input type="radio" value="no" id="bluetooth-unavailable" name="bluetooth">
                     <img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент">
                   </p>
-                    <input type="submit" value="Показать" id="bluetooth">
+                    <button type="submit" id="bluetooth">Показать</button>
                 </fieldset>
               </form>
             </section>
             <section class="sort">
-              <h3>Сортировка товаров</h3>
-              <form>
+              <h3>Сортировка:</h3>
+              <form class="sort-form">
                 <fieldset>
-                  <p><input type="radio" id="sort-by-price">По цене</p>
-                  <p><input type="radio" id="sort-by-type">По типу</p>
-                  <p><input type="radio" id="sort-by-popular">По популярности</p>
+                  <label for="sort-by-price">По цене</label>
+                  <input type="radio" id="sort-by-price" name="sort" checked>
+                  <label for="sort-by-type">По типу</label>
+                  <input type="radio" id="sort-by-type" name="sort">
+                  <label for="sort-by-popular">По популярности</label>
+                  <input type="radio" id="sort-by-popular" name="sort">
                 </fieldset>
-                <img src="svg/icon-up-dir.svg" alt="Стрелка вверх">
-                <img src="svg/icon-down-dir.svg" alt="Стрелка вниз">
+                <button type="button"><img src="svg/icon-up-dir.svg" alt="По возрастанию"></button>
+                <button type="button"><img src="svg/icon-down-dir.svg" alt="По убыванию"></button>
+
               </form>
             </section>
 
@@ -173,11 +191,11 @@
               </ul>
               <div>
                 <ul class="pagination-list">
-                  <li class="pagination-item"><a href="#">Назад</a></li>
-                  <li class="pagination-item pagination-item-current"><a>1</a></li>
-                  <li class="pagination-item"><a href="#">2</a></li>
-                  <li class="pagination-item"><a href="#">3</a></li>
-                  <li class="pagination-item"><a href="#">Вперед</a></li>
+                  <li class="pagination-item"><a href="#" aria-label="Вернуться на предыдущую страницу">Назад</a></li>
+                  <li class="pagination-item pagination-item-current"><a aria-label="Первая страница">1</a></li>
+                  <li class="pagination-item"><a href="#" aria-label="Вторая страница">2</a></li>
+                  <li class="pagination-item"><a href="#" aria-label="Третья страница">3</a></li>
+                  <li class="pagination-item"><a href="#" aria-label="Следующая страница">Вперед</a></li>
                 </ul>
               </div>
             </section>
@@ -186,7 +204,7 @@
       </main>
       <footer class="main-footer">
         <nav class="footer-navigation">
-          <a class="device-logo" href="#">
+          <a class="device-logo" href="#" aria-label="Вернуться на главую страницу">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
           <div>

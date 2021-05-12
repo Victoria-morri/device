@@ -11,31 +11,29 @@
           <a class="device-logo">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <form>
-            <fieldset>
-              <p><input type="text" placeholder="Поиск по сайту" id="search-input"></p>
-              <button type="submit" value="Найти" id="search-btn"></button>
-              <img src="svg/search.svg" alt="Иконка поиска">
-            </fieldset>
+          <form class="search-form">
+                <label class="visually-hidden" for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt="Иконка поиска"></label>
+                <input type="text" placeholder="Поиск по сайту" id="search-input">
+              <button class="visually-hidden" type="submit" id="search-btn">Найти
+                </button>
           </form>
           <div>
-            <img src="svg/user.svg" alt="Иконка пользователя">
+            <img src="svg/user.svg" alt="user-icon">
             <ul class="user-nav">
               <li><a class="enter-my-profile" href="#">Войти</a></li>
               <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
               <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
             </ul>
           </div>
-
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="Иконка сравнения"></li>
-            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="Иконка корзины"></li>
+            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="compare-icon"></li>
+            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
           </ul>
           <ul class="site-nav">
-            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Плюс">
+            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Просмотреть товары">
               <ul class="visually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#" class="site-nav-current">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
                 <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
@@ -54,8 +52,8 @@
         <section class="popular-goods-list">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="popular-goods-item">
-            <h3>Селфи-палка</h3>
-            <img src="/image/promo-slider-1.png" alt="Фото селфи-палки">
+            <h3 class="visually-hidden">Селфи-палка</h3>
+            <img src="image/promo-slider-1.png" alt="Фото селфи-палки">
             <span>Делай селфи, как Бен Стиллер!</span>
             <p>Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -84,8 +82,8 @@
             </table>
           </div>
           <div class="popular-goods-item">
-           <h3>Умные часы</h3>
-           <img src="/image/promo-slider-2.png" alt="Фото умных часов">
+           <h3 class="visually-hidden">Умные часы</h3>
+           <img src="image/promo-slider-2.png" alt="Фото умных часов">
             <span>Худеем правильно!</span>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
@@ -110,8 +108,8 @@
             </table>
           </div>
           <div class="popular-goods-item">
-            <h3>Квадрокоптер</h3>
-            <img src="/image/promo-slider-3.png" alt="Фото квадрокоптера">
+            <h3 class="visually-hidden">Квадрокоптер</h3>
+            <img src="image/promo-slider-3.png" alt="Фото квадрокоптера">
             <span>Порхает как бабочка, жалит как пчела!</span>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
@@ -143,34 +141,34 @@
           <h2 class="visually-hidden">Виды товаров</h2>
           <ul class="goods-list">
             <li class="goods-item">
-              <a href="#"><h3>Виртуальная реальность</h3>
-                <img src="svg/popular-1.svg" alt="virtual-icon">
-              </a>
+              <h3 class="visually-hidden">Виртуальная реальность</h3>
+              <img src="svg/popular-1.svg" alt="virtual-icon">
+              <a href="#">Виртуальная реальность</a>
             </li>
             <li class="goods-item">
-              <a href="#"><h3>Моноподы для селфи</h3>
-                <img src="svg/popular-2.svg" alt="monopod-icon">
-              </a>
+              <h3 class="visually-hidden">Моноподы для селфи</h3>
+              <img src="svg/popular-2.svg" alt="monopod-icon">
+              <a href="#">Моноподы для селфи</a>
             </li>
             <li class="goods-item">
-              <a href="#"><h3>Экшн-камеры</h3>
-                <img src="svg/popular-3.svg" alt="action-camera-icon">
-              </a>
+              <h3 class="visually-hidden">Экшн-камеры</h3>
+              <img src="svg/popular-3.svg" alt="action-camera-icon">
+              <a href="#">Экшн-камеры</a>
             </li>
             <li class="goods-item">
-              <a href="#"><h3>Фитнес-браслеты</h3>
-                <img src="svg/popular-4.svg" alt="fitnes-braselet-icon">
-              </a>
+              <h3 class="visually-hidden">Фитнес-браслеты</h3>
+              <img src="svg/popular-4.svg" alt="fitnes-braselet-icon">
+              <a href="#">Фитнес-браслеты</a>
             </li>
             <li class="goods-item">
-              <a href="#"><h3>Умные часы</h3>
-                <img src="svg/popular-5.svg" alt="smart-watch-icon">
-              </a>
+              <h3 class="visually-hidden">Умные часы</h3>
+              <img src="svg/popular-5.svg" alt="smart-watch-icon">
+              <a href="#">Умные часы</a>
             </li>
             <li class="goods-item">
-              <a href="#"><h3>Квадрокоптеры</h3>
-                <img src="svg/popular-6.svg" alt="Quadrocopter-icon">
-              </a>
+              <h3 class="visually-hidden">Квадрокоптеры</h3>
+              <img src="svg/popular-6.svg" alt="Quadrocopter-icon">
+              <a href="#">Квадрокоптеры</a>
             </li>
           </ul>
       </section>
@@ -225,7 +223,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
           сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#"><img src="/image/main-contacts-map.jpg" alt="Расположение магазина на карте"></a>
+        <a href="#"><img src="image/main-contacts-map.jpg" alt="Расположение магазина на карте"></a>
         <a href="#">Напишите нам</a>
       </section>
       </main>
@@ -269,15 +267,18 @@
         <img src="svg/logo-html.svg" alt="Логотип HTML academy">
       </footer>
       <section class="modal modal-write-us">
-        <h4>Модальное окно письма</h4>
-        <form>
+        <h4 class="visually-hidden">Модальное окно письма</h4>
+        <form class="contact-us">
           <fieldset>
-            <p><input type="text" placeholder="Имя Фамилия" id="name-input">Ваше имя</p>
-            <p><input type="text" placeholder="email@example.com" id="e-mail-input">Ваш e-mail</p>
-            <p><input type="text" placeholder="В свободной форме" id="letter-text-input">Текст письма</p>
-            <p><input type="submit" value="Отправить" id="submit-btn"></p>
+            <label for="contact-us-name-input">Ваше имя</label>
+            <input type="text" placeholder="Имя Фамилия" id="contact-us-name-input">
+            <label for="contact-us-e-mail-input">Ваш e-mail</label>
+            <input type="text" placeholder="email@example.com" id="contact-us-e-mail-input">
+            <label for="contact-us-letter-text-input">Текст письма</label>
+            <input type="text" placeholder="В свободной форме" id="contact-us-letter-text-input">
+            <button type="submit" id="contact-us-submit-btn">Отправить</button>
           </fieldset>
         </form>
-        <img src="svg/modal-close.svg" alt="Крестик закрывающий окно">
+        <img src="svg/modal-close.svg" alt="Закрыть окно">
       </section>
     </body>
