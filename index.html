@@ -11,29 +11,39 @@
           <a class="device-logo">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <form class="search-form">
-                <label class="visually-hidden" for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt="Иконка поиска"></label>
+          <form class="search-form" action="http://echo.htmlacademy.ru">
+                <label for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt=""></label>
                 <input type="text" placeholder="Поиск по сайту" id="search-input">
               <button class="visually-hidden" type="submit" id="search-btn">Найти
                 </button>
           </form>
           <div>
-            <img src="svg/user.svg" alt="user-icon">
+            <img src="svg/user.svg" alt="">
             <ul class="user-nav">
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
               <li><a class="enter-my-profile" href="#">Войти</a></li>
               <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
             </ul>
           </div>
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="compare-icon"></li>
-            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
+            <li>
+              <a href="#">
+                <img src="svg/compare.svg" alt="">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="svg/cart.svg" alt="">
+                Корзина
+              </a>
+            </li>
           </ul>
           <ul class="site-nav">
-            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Просмотреть товары">
+            <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="" aria-label="Просмотреть товары">
               <ul class="visually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#" class="site-nav-current">Моноподы для селфи</a></li>
+                <li><a href="#" class="site-nav_item_current">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
                 <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
@@ -41,9 +51,9 @@
               </ul>
             </li>
 
-            <li><a>ДОСТАВКА</a></li>
-            <li><a>ГАРАНТИЯ</a></li>
-            <li><a>КОНТАКТЫ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
         </nav>
       </header>
@@ -58,14 +68,7 @@
             <p>Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#">ПОДРОБНЕЕ</a>
-          <div>
-            <ul>
-              <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
-              <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-              <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-            </ul>
 
-          </div>
             <table>
               <tbody>
                 <tr>
@@ -88,14 +91,7 @@
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
             <a href="#">ПОДРОБНЕЕ</a>
-            <div>
-              <ul>
-                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-                <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
-                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-              </ul>
 
-            </div>
             <table>
               <tbody>
                 <tr>
@@ -114,14 +110,6 @@
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#">ПОДРОБНЕЕ</a>
-            <div>
-              <ul>
-                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-                <li><img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент"></li>
-                <li><img src="svg/slider-button.svg" alt="Отмеченный элемент"></li>
-              </ul>
-
-            </div>
             <table>
               <tbody>
                 <tr>
@@ -135,40 +123,54 @@
               </tbody>
             </table>
           </div>
+          <div>
+            <label class="popular-goods_control" for="popular-item-1"></label>
+            <input class="popular-goods_first-item visually-hidden" type="radio" id="popular-item-1" name="popular-goods_checkbox">
+            <label class="popular-goods_control" for="popular-item-2"></label>
+            <input class="popular-goods_first-item visually-hidden" type="radio" id="popular-item-2" name="popular-goods_checkbox">
+            <label class="popular-goods_control" for="popular-item-3"></label>
+            <input class="popular-goods_first-item visually-hidden" type="radio" id="popular-item-3" name="popular-goods_checkbox">
+          </div>
         </section>
 
         <section class="goods">
           <h2 class="visually-hidden">Виды товаров</h2>
           <ul class="goods-list">
             <li class="goods-item">
-              <h3 class="visually-hidden">Виртуальная реальность</h3>
-              <img src="svg/popular-1.svg" alt="virtual-icon">
-              <a href="#">Виртуальная реальность</a>
+              <a href="#" aria-label="Виртуальная реальность">
+                <img src="svg/popular-1.svg" alt="Иконка виртуальной реальности">
+                <p>Виртуальная реальность</p>
+              </a>
             </li>
             <li class="goods-item">
-              <h3 class="visually-hidden">Моноподы для селфи</h3>
-              <img src="svg/popular-2.svg" alt="monopod-icon">
-              <a href="#">Моноподы для селфи</a>
+              <a href="#" aria-label="Моноподы для селфи">
+                <img src="svg/popular-2.svg" alt="Иконка моноподов для селфи">
+                <p>Моноподы для селфи</p>
+              </a>
             </li>
             <li class="goods-item">
-              <h3 class="visually-hidden">Экшн-камеры</h3>
-              <img src="svg/popular-3.svg" alt="action-camera-icon">
-              <a href="#">Экшн-камеры</a>
+              <a href="#" aria-label="Экшн-камеры">
+                <img src="svg/popular-3.svg" alt="Иконка экшн-камеры">
+                <p>Экшн-камеры</p>
+              </a>
             </li>
             <li class="goods-item">
-              <h3 class="visually-hidden">Фитнес-браслеты</h3>
-              <img src="svg/popular-4.svg" alt="fitnes-braselet-icon">
-              <a href="#">Фитнес-браслеты</a>
+              <a href="#" aria-label="Фитнес-браслеты">
+                <img src="svg/popular-4.svg" alt="Иконка Фитнес браслета">
+                <p>Фитнес-браслеты</p>
+              </a>
             </li>
             <li class="goods-item">
-              <h3 class="visually-hidden">Умные часы</h3>
-              <img src="svg/popular-5.svg" alt="smart-watch-icon">
-              <a href="#">Умные часы</a>
+              <a href="#" aria-label="Умные часы">
+                <img src="svg/popular-5.svg" alt="Иконка умных часов">
+                <p>Умные часы</p>
+              </a>
             </li>
             <li class="goods-item">
-              <h3 class="visually-hidden">Квадрокоптеры</h3>
-              <img src="svg/popular-6.svg" alt="Quadrocopter-icon">
-              <a href="#">Квадрокоптеры</a>
+              <a href="#" aria-label="Квадрокоптеры">
+                <img src="svg/popular-6.svg" alt="Иконка квадрокоптеров">
+                <p>Квадрокоптеры</p>
+              </a>
             </li>
           </ul>
       </section>
@@ -229,26 +231,36 @@
       </main>
       <footer class="main-footer">
         <nav class="footer-navigation">
-          <a class="device-logo" href="#">
+          <a class="device-logo">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
           <div>
-            <img src="svg/user.svg" alt="Иконка пользователя">
+            <img src="svg/user.svg" alt="">
             <ul class="user-nav">
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
               <li><a class="enter-my-profile" href="#">Войти</a></li>
               <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
             </ul>
           </div>
 
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="compare-icon"></li>
-            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
+            <li>
+              <a href="#">
+                <img src="svg/compare.svg" alt="">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="svg/cart.svg" alt="">
+                Корзина
+              </a>
+            </li>
           </ul>
           <ul class="site-nav">
-            <li><a>ДОСТАВКА</a></li>
-            <li><a>ГАРАНТИЯ</a></li>
-            <li><a>КОНТАКТЫ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
         </nav>
         <div>
@@ -268,17 +280,20 @@
       </footer>
       <section class="modal modal-write-us">
         <h4 class="visually-hidden">Модальное окно письма</h4>
-        <form class="contact-us">
+        <form class="contact-us" action="http://echo.htmlacademy.ru">
           <fieldset>
-            <label for="contact-us-name-input">Ваше имя</label>
-            <input type="text" placeholder="Имя Фамилия" id="contact-us-name-input">
-            <label for="contact-us-e-mail-input">Ваш e-mail</label>
-            <input type="text" placeholder="email@example.com" id="contact-us-e-mail-input">
-            <label for="contact-us-letter-text-input">Текст письма</label>
-            <input type="text" placeholder="В свободной форме" id="contact-us-letter-text-input">
-            <button type="submit" id="contact-us-submit-btn">Отправить</button>
+            <label for="contact-us_user-name">Ваше имя</label>
+            <input type="text" placeholder="Имя Фамилия" id="contact-us_user-name">
+            <label for="contact-us_user-e-mail">Ваш e-mail</label>
+            <input type="text" placeholder="email@example.com" id="contact-us_user-e-mail">
+            <label for="contact-us_user-message">Текст письма</label>
+            <textarea name="user-message" placeholder="В свободной форме" id="contact-us_user-message"></textarea>
+            <button type="submit" id="contact-us_submit-btn">Отправить</button>
           </fieldset>
         </form>
-        <img src="svg/modal-close.svg" alt="Закрыть окно">
+        <button class="modal-write-us_modal-close" type="button">
+          <img src="svg/modal-close.svg" alt="Закрыть окно">
+        </button>
+
       </section>
     </body>

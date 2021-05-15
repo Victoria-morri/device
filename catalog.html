@@ -11,29 +11,39 @@
           <a class="device-logo" href="index.html">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <form class="search-form">
-                <label class="visually-hidden" for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt="Иконка поиска"></label>
+          <form class="search-form" action="http://echo.htmlacademy.ru">
+                <label for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt=""></label>
                 <input type="text" placeholder="Поиск по сайту" id="search-input">
               <button class="visually-hidden" type="submit" id="search-btn">Найти
                 </button>
           </form>
           <div>
-            <img src="svg/user.svg" alt="user-icon">
+            <img src="svg/user.svg" alt="">
             <ul class="user-nav">
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
               <li><a class="enter-my-profile" href="#">Войти</a></li>
               <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
             </ul>
           </div>
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="compare-icon"></li>
-            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="cart-icon"></li>
+            <li>
+              <a href="#">
+                <img src="svg/compare.svg" alt="">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="svg/cart.svg" alt="">
+                Корзина
+              </a>
+            </li>
           </ul>
           <ul class="site-nav">
             <li><button>КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt="Просмотреть товары">
               <ul class="visually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#" class="site-nav-current">Моноподы для селфи</a></li>
+                <li><a href="#" class="site-nav_item_current">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
                 <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
@@ -41,17 +51,17 @@
               </ul>
             </li>
 
-            <li><a>ДОСТАВКА</a></li>
-            <li><a>ГАРАНТИЯ</a></li>
-            <li><a>КОНТАКТЫ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
         </nav>
       </header>
       <main class="page-content">
         <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a><img src="svg/nav-arrow.svg" alt="Стрелка"></li>
-          <li><a href="catalog.html">Каталог товаров</a><img src="svg/nav-arrow.svg" alt="Стрелка"></li>
+          <li><a href="index.html">Главная</a><img src="svg/nav-arrow.svg" alt=""></li>
+          <li><a href="catalog.html">Каталог товаров</a><img src="svg/nav-arrow.svg" alt=""></li>
           <li>Моноподы для селфи</li>
         </ul>
         <section>
@@ -59,14 +69,15 @@
           <div>
             <section class="filters">
               <h3>Фильтр:</h3>
-              <form class="filters-form">
+              <form class="filters-form" action="http://echo.htmlacademy.ru">
                 <fieldset>
-                  <h4>Стоимость</h4>
+                  <legend>Стоимость</legend>
                   <img src="svg/filter-button.svg" alt="Бегунок регулировки стоимости">
                   <label class="visually hidden" for="price">Настройка диапазона стоимости</label>
                   <input type="range" min="0" max="5000" id="price">
-                  <h4>Цвет</h4>
-                  <p>
+                </fieldset>
+                <fieldset>
+                  <legend>Цвет</legend>
                     <img src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img class="visually-hidden" src="svg/checkbox-on.svg" alt="Отмеченный элемент">
                     <label for="color-black">Черный</label>
                     <input type="checkbox" value="black" id="color-black">
@@ -82,24 +93,24 @@
                     <img class="visually-hidden" src="svg/checkbox-off.svg" alt="Неотмеченный элемент"><img src="svg/checkbox-on.svg" alt="Отмеченный элемент">
                     <label for="color-pink">Розовый</label>
                     <input type="checkbox" value="pink" id="color-pink">
-                  </p>
-                  <h4>Bluetooth</h4>
-                  <p>
+                </fieldset>
+                <fieldset>
+                  <legend>Bluetooth</legend>
                     <label for="bluetooth-available">Есть</label>
                     <input type="radio" value="yes" id="bluetooth-available" name="bluetooth" checked>
                     <img src="svg/slider-button.svg" alt="отмеченный элемент">
                     <label for="bluetooth-unavailable">Нет</label>
                     <input type="radio" value="no" id="bluetooth-unavailable" name="bluetooth">
                     <img src="svg/slider-button-empty.svg" alt="Неотмеченный элемент">
-                  </p>
-                    <button type="submit" id="bluetooth">Показать</button>
                 </fieldset>
+                    <button type="submit" id="bluetooth">Показать</button>
+
               </form>
             </section>
             <section class="sort">
-              <h3>Сортировка:</h3>
-              <form class="sort-form">
+              <form class="sort-form" action="http://echo.htmlacademy.ru">
                 <fieldset>
+                  <legend>Сортировка:</legend>
                   <label for="sort-by-price">По цене</label>
                   <input type="radio" id="sort-by-price" name="sort" checked>
                   <label for="sort-by-type">По типу</label>
@@ -208,21 +219,31 @@
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
           <div>
-            <img src="svg/user.svg" alt="Иконка пользователя">
+            <img src="svg/user.svg" alt="">
             <ul class="user-nav">
+              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
               <li><a class="enter-my-profile" href="#">Войти</a></li>
               <li><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-              <li><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
             </ul>
           </div>
           <ul class="shopping-nav">
-            <li><a href="#">Сравнить</a><img src="svg/compare.svg" alt="Иконка сравнения"></li>
-            <li><a href="#">Корзина</a><img src="svg/cart.svg" alt="Иконка корзины"></li>
+            <li>
+              <a href="#">
+                <img src="svg/compare.svg" alt="">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="svg/cart.svg" alt="">
+                Корзина
+              </a>
+            </li>
           </ul>
           <ul class="site-nav">
-            <li><a>ДОСТАВКА</a></li>
-            <li><a>ГАРАНТИЯ</a></li>
-            <li><a>КОНТАКТЫ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
         </nav>
         <div>
