@@ -32,7 +32,7 @@ ul:not(.info-logistic-list) {
   list-style: none;
 }
 
-.main-header,
+.main-navigation,
 .goods-item a ~ img {
   background-color: rgb(247, 226, 150);
 }
@@ -108,6 +108,7 @@ button {
   line-height: 48px;
 }
 
+
 .device-logo:hover,
 .user-nav-header_item:hover,
 .shopping-nav-header_item:hover {
@@ -173,6 +174,122 @@ border-radius: none;
 
 .site-nav-header_catalog:active img {
   opacity: 0.5;
+}
+/* сеточные стили*/
+.main-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-navigation {
+  width: 1160px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  align-items: stretch;
+  height: 300px;
+
+  margin-top: 0px;
+  margin-bottom: -50px;
+  outline: 1px solid red;
+}
+.main-navigation_user {
+
+  display: flex;
+  outline: 1px solid orange;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 25px 60px 10px;
+  align-items: center;
+}
+
+.main-navigation_user li {
+outline: 1px solid green;
+
+}
+.device-logo {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.search-form {
+  min-height: 30px;
+}
+
+.search-form label {
+  margin-right: 20px;
+}
+.nav-header {
+  display: flex;
+
+  width: 500px;
+  justify-content: space-between;
+  outline: 1px solid black;
+}
+
+.user-nav-header {
+  display: flex;
+  padding: 0;
+}
+.user-nav-header_item img {
+padding-right: 12px;
+}
+.shopping-nav-header {
+  box-sizing: border-box;
+  outline: 1px solid black;
+  display: flex;
+  padding: 0;
+  width: 220px;
+  justify-content: space-between;
+}
+/*.shopping-nav-header_item {
+  min-width: 100px;
+}*/
+.shopping-nav-header_item img {
+  padding: 6px;
+  padding-bottom: 0px;;
+}
+
+.site-nav-header {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px 60px;
+letter-spacing: 0.2em;
+}
+
+.site-nav-header li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.site-nav-header li:last-child {
+  margin-left: 115px;
+}
+
+.site-nav-header li:nth-child(2) {
+  margin-left: 295px;
+
+}
+
+.site-nav-header .site-nav-header_catalog {
+  white-space: nowrap;
+
+  margin-left: 0px;
+}
+
+.site-nav-header button {
+  letter-spacing: inherit;
+  padding: 0px;
+}
+.site-nav-header_catalog img {
+  margin-left: 20px;
 }
 
 /* MAIN*/

@@ -10,47 +10,52 @@
     </head>
     <body>
       <header class="main-header">
-        <nav class="main-navigation">
           <a class="device-logo">
             <img src="svg/black-logo-device.svg" alt="Логотип Device">
           </a>
-          <form class="search-form" action="http://echo.htmlacademy.ru" tabindex="1">
-                <label for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt=""></label>
-                <input type="text" placeholder="Поиск по сайту" id="search-input">
-                <button class="visually-hidden" type="submit" id="search-btn">Найти</button>
-          </form>
-          <div>
-            <img src="svg/user.svg" alt="">
-            <ul class="user-nav-header">
-              <li class="user-nav-header_item"><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
-              <li class="user-nav-header_item"><a class="enter-my-profile" href="#">Войти</a></li>
-              <li class="user-nav-header_item"><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
-            </ul>
+        <nav class="main-navigation">
+          <div class="main-navigation_user">
+               <form class="search-form" action="http://echo.htmlacademy.ru" tabindex="1">
+                    <label for="search-input" aria-label="Введите искомый элемент для поиска по сайту"><img src="svg/search.svg" alt=""></label>
+                    <input type="text" placeholder="Поиск по сайту" id="search-input">
+                    <button class="visually-hidden" type="submit" id="search-btn">Найти</button>
+              </form>
+              <div class="nav-header">
+                <ul class="user-nav-header">
+                  <li class="user-nav-header_item"><a class="enter-my-profile" href="#"><img src="svg/user.svg" alt="">Войти</a></li>
+                  <!--<li class="user-nav-header_item"><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
+                  <li class="user-nav-header_item"><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>-->
+                </ul>
+                <ul class="shopping-nav-header">
+                  <li class="shopping-nav-header_item">
+                    <a href="#">
+                      <img src="svg/compare.svg" alt="">
+                      Сравнить
+                    </a>
+                  </li>
+                  <li class="shopping-nav-header_item">
+                    <a href="#">
+                      <img src="svg/cart.svg" alt="">
+                      Корзина
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
-          <ul class="shopping-nav-header">
-            <li class="shopping-nav-header_item">
-              <a href="#">
-                <img src="svg/compare.svg" alt="">
-                Сравнить
-              </a>
-            </li>
-            <li class="shopping-nav-header_item">
-              <a href="#">
-                <img src="svg/cart.svg" alt="">
-                Корзина
-              </a>
-            </li>
-          </ul>
+          <!--<div class="nav-header">
+
+
+          </div>-->
           <ul class="site-nav-header">
-            <li class="font-big"><div class="site-nav-header_catalog"><button aria-label="Просмотреть товары">КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt=""></div></li>
-              <ul class="site-nav_catalog-list visually-hidden">
+            <li class="font-big site-nav-header_catalog"><button aria-label="Просмотреть товары">КАТАЛОГ ТОВАРОВ</button><img src="svg/plus.svg" alt=""></li>
+              <!--<ul class="site-nav_catalog-list visually-hidden">
                 <li class="site-nav-header_catalog_item"><a href="#">Виртуальная реальность</a></li>
                 <li class="site-nav-header_catalog_item"><a href="#" class="site-nav_item_current">Моноподы для селфи</a></li>
                 <li class="site-nav-header_catalog_item"><a href="#">Экшн-камеры</a></li>
                 <li class="site-nav-header_catalog_item"><a href="#">Фитнес-браслеты</a></li>
                 <li class="site-nav-header_catalog_item"><a href="#">Умные часы</a></li>
                 <li class="site-nav-header_catalog_item"><a href="#">Квадрокоптеры</a></li>
-              </ul>
+              </ul>-->
             </li>
 
             <li class="font-big"><a href="#">ДОСТАВКА</a></li>
