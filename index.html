@@ -77,7 +77,7 @@
               <span class="popular-goods-item_content_slogan">Делай селфи,<br> как Бен Стиллер!</span>
               <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="font-big design-button" href="#">Подробнее</a>
+              <a class="font-big yellow-line-button" href="#">Подробнее</a>
 
               <table>
                   <thead class="popular-goods-item_content_options">
@@ -184,6 +184,7 @@
           </ul>
       </section>
       <section class="services">
+        <div class="services_content">
         <h2 class="visually-hidden">Сервис</h2>
         <div class="services_buttons">
           <button class="font-big yellow-line-button" type="button">Доставка</button>
@@ -191,28 +192,36 @@
           <button class="font-big yellow-line-button" type="button">Кредит</button>
         </div>
         <div class="services-item">
-          <h3 class="font-big">Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="services-item_info">
+            <h3 class="topic">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+              бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
           <img src="svg/delivery.svg" alt="Иконка доставки">
         </div>
+        <!--
         <div class="services-item">
-          <h3 class="font-big">Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
-            не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
+          <div class="services-item_info">
+            <h3 class="topic">Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+              не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
           <img src="svg/guarantee.svg" alt="Иконка гарантии">
         </div>
         <div class="services-item">
-          <h3 class="font-big">Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
-              для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
-              разумеется.</p>
+          <div class="services-item_info">
+            <h3 class="topic">Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут
+                для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
+                разумеется.</p>
+          </div>
           <img src="svg/credit.svg" alt="Иконка кредита">
+        </div>-->
         </div>
       </section>
       <div class="logo">
-        <h2 class="">Логотипы товаров</h2>
+        <h2 class="visually-hidden">Логотипы товаров</h2>
         <ul class="logo-list">
           <li class="logo-list_item logo-list_item-1" aria-label="Логотип dgi"><!--<img src="image/logo-1.jpg" alt="Логотип dgi"><img src="image/logo-1-color.jpg" alt="Логотип dgi">--></li>
           <li class="logo-list_item logo-list_item-2" aria-label="Логотип sp gadgets"></li>
@@ -220,70 +229,66 @@
           <li class="logo-list_item logo-list_item-4" aria-label="Логотип vive"></li>
         </ul>
       </div>
-      <section class="info">
-        <h2 class="font-big">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика,
-           который есть в каждом из нас.</p>
-        <div class="info-logistic">
-          <p>Мы можем доставить ваш товар в самые отдаленные точки
-            России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="info-logistic-list font-big">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-        </div>
-        <a class="font-big yellow-line-button" href="#">Подробнее о нас</a>
-      </section>
-      <section class="contact">
-        <h2 class="font-big">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
-          сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a class="font-big" href="#"><img src="image/main-contacts-map.jpg" alt="Расположение магазина на карте"></a>
-        <a class="font-big yellow-line-button" href="#">Напишите нам</a>
-      </section>
-      </main>
-      <footer class="main-footer">
-        <nav class="footer-navigation">
-          <a class="device-logo">
-            <img src="svg/yellow-logo-device.svg" alt="Логотип Device">
-          </a>
-          <div>
-            <img src="svg/yellow-user.svg" alt="">
-            <ul class="user-nav-footer">
-              <li class="user-nav-footer_item"><a class="my-profile visually-hidden" href="#">Валентин Петухов</a></li>
-              <li class="user-nav-footer_item"><a class="enter-my-profile" href="#">Войти</a></li>
-              <li class="user-nav-footer_item"><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>
+      <div class="about-company">
+        <section class="info">
+          <h2 class="topic">О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.</p>
+          <div class="info-logistic">
+            <p>Мы можем доставить ваш товар в самые отдаленные точки
+              России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="info-logistic-list font-big">
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
             </ul>
           </div>
+          <a class="font-big yellow-line-button" href="#">Подробнее о нас</a>
+        </section>
+        <section class="contact">
+          <h2 class="topic">Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
+            сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="font-big" href="#"><img src="image/main-contacts-map.jpg" alt="Расположение магазина на карте"></a>
+          <a class="font-big yellow-line-button" href="#">Напишите нам</a>
+        </section>
+      </div>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer_content">
+          <nav class="footer-navigation_first-string">
+            <a class="device-logo">
+              <img src="svg/yellow-logo-device.svg" alt="Логотип Device">
+            </a>
+            <div class="footer-navigation_user">
+              <ul class="user-nav-footer">
+                <li class="user-nav-footer_item"><a class="enter-my-profile" href="#"><img src="svg/yellow-user.svg" alt="">Войти</a></li>
+                <!--<li class="user-nav-footer_item"><a class="my-profile visually-hidden" href="#"><img src="svg/yellow-user.svg" alt="">Валентин Петухов</a></li>
 
-          <ul class="footer-shopping-nav">
-            <li>
-              <img src="svg/yellow-compare.svg" alt="">
-              <a href="#">
-                Сравнить
-              </a>
-            </li>
-            <li>
-              <img src="svg/yellow-cart.svg" alt="">
-              <a href="#">
-                Корзина
-              </a>
-            </li>
-          </ul>
-          <ul class="site-nav-footer font-big">
-            <li><a href="#">ДОСТАВКА</a></li>
-            <li><a href="#">ГАРАНТИЯ</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
+                <li class="user-nav-footer_item"><a class="exit-my-profile visually-hidden" href="#">Выйти</a></li>-->
+              </ul>
+              <ul class="footer-shopping-nav">
+                <li>
+                  <a href="#"><img src="svg/yellow-compare.svg" alt="">Сравнить</a>
+                </li>
+                <li>
+                  <a href="#"><img src="svg/yellow-cart.svg" alt="">Корзина</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-        <div class="footer-navigation_adress">
-          <p>
-            г. Москва, ул. Строителей, 15
-          </p>
-          <p>
-            Тел.: +7 (495) 495-95-95
-          </p>
+        <div class="footer-navigation_second-string">
+            <ul class="site-nav-footer font-big">
+              <li><a href="#">ДОСТАВКА</a></li>
+              <li><a href="#">ГАРАНТИЯ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <p>
+              г. Москва, ул. Строителей, 15
+            </p>
+            <p>
+              Тел.: +7 (495) 495-95-95
+            </p>
         </div>
         <ul class="social-networks-list">
           <li><a href="#"><img class="social-networks-list_item" src="svg/fb.svg" alt="Фэйсбук"></a></li>
@@ -291,9 +296,13 @@
           <li><a href="#"><img class="social-networks-list_item" src="svg/twitter.svg" alt="Твиттер"></a></li>
         </ul>
         <img class="main-footer_html-logo" src="svg/logo-html.svg" alt="Логотип HTML academy">
+        </div>
       </footer>
       <section class="modal modal-write-us">
         <h4 class="visually-hidden">Модальное окно письма</h4>
+        <button class="modal-write-us_modal-close" type="button">
+          <img src="svg/modal-close.svg" alt="Закрыть окно">
+        </button>
         <form class="contact-us" action="http://echo.htmlacademy.ru">
           <fieldset class="contact-us_letter">
             <label class="font-big" for="contact-us_user-name">Ваше имя</label>
@@ -305,9 +314,7 @@
             <button class="font-big yellow-line-button" type="submit" id="contact-us_submit-btn">Отправить</button>
           </fieldset>
         </form>
-        <button class="modal-write-us_modal-close" type="button">
-          <img src="svg/modal-close.svg" alt="Закрыть окно">
-        </button>
+
 
       </section>
     </body>
