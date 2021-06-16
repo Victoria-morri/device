@@ -276,7 +276,7 @@
                 </li>
               </ul>
             </div>
-        </nav>
+          </nav>
         <div class="footer-navigation_second-string">
             <ul class="site-nav-footer font-big">
               <li><a href="#">ДОСТАВКА</a></li>
@@ -305,13 +305,19 @@
         </button>
         <form class="contact-us" action="http://echo.htmlacademy.ru">
           <fieldset class="contact-us_letter">
-            <label class="font-big" for="contact-us_user-name">Ваше имя</label>
-            <input type="text" placeholder="Имя Фамилия" id="contact-us_user-name">
-            <label class="font-big" for="contact-us_user-e-mail">Ваш e-mail</label>
-            <input type="email" placeholder="email@example.com" id="contact-us_user-e-mail">
-            <label class="font-big" for="contact-us_user-message">Текст письма</label>
-            <textarea class="font-big" name="user-message" placeholder="В свободной форме" id="contact-us_user-message"></textarea>
-            <button class="font-big yellow-line-button" type="submit" id="contact-us_submit-btn">Отправить</button>
+            <div class="contact-us_user-name_block">
+              <label class="font-big" for="contact-us_user-name">Ваше имя:</label>
+              <input type="text" placeholder="Имя Фамилия" id="contact-us_user-name">
+            </div>
+            <div class="contact-us_user-e-mail_block">
+              <label class="font-big" for="contact-us_user-e-mail">Ваш e-mail:</label>
+              <input type="email" placeholder="email@example.com" id="contact-us_user-e-mail">
+            </div>
+            <div class="contact-us_user-message_block">
+              <label class="font-big" for="contact-us_user-message">Текст письма:</label>
+              <textarea class="font-big" name="user-message" placeholder="В свободной форме" id="contact-us_user-message"></textarea>
+            </div>
+              <button class="font-big yellow-line-button" type="submit" id="contact-us_submit-btn">Отправить</button>
           </fieldset>
         </form>
 
